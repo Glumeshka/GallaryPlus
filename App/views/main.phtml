@@ -1,0 +1,15 @@
+<main class="main">
+    <?php if(isset($pageData['images']) && !empty($pageData['images'])) {
+        foreach ($pageData['images'] as $images) {
+            echo "<section class='section'>";
+            echo "<h2 class='section-item'>";
+            echo $images['title'];
+            echo "</h2>";
+            echo "<a href='\\Image\\id\\" . $images['id'] . "'>";
+            echo "<img src='" . UPLOAD_DIR . "\\" . $images['filename'] . "'>";
+            echo "</a>";
+            echo "</section>";
+        }
+    }
+    ?>
+</main>

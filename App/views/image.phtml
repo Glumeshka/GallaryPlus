@@ -1,0 +1,47 @@
+<div class="main">
+    <h2 class='section-item'>
+    <?php if($_SESSION['idUser'] === $pageData['image']['owner']){
+            echo "<a href=/Image/delImage/" . $pageData['image']['id'] . ">&#10006;</a>";
+        }
+    ?>
+    Картинку загрузил: <?php echo $pageData['image']['username']?></h2>
+    <section class="section">
+        <img src="<?php echo "\\" . UPLOAD_DIR . "\\" . $pageData['image']['filename']; ?>"> 
+        <h2 class='section-item'>
+            <?php echo $pageData['image']['title']?>
+        </h2>
+    </section>
+    <div class="section-item">
+    <?php if(isset($pageData['comment']) && !empty($pageData['comment'])) {
+            foreach ($pageData['comment'] as $comment) {
+                echo "<h2 class=''>";
+                if($_SESSION['idUser'] === $comment['author']){
+                    echo "<a href=/Image/delComment/" . $comment['id'] . ">&#10006;</a>";
+                }
+                echo " Автор: " . $comment['username'];
+                echo "<br>";
+                echo "Оставлен: " . $comment['created'];
+                echo "<br>";
+                echo "Комментарий: " . $comment['text'];
+                echo "<br>";
+                echo "<hr>";
+                echo "</h2>";
+            }
+        }
+    ?>
+    </div>
+    <?php if(!empty($_SESSION['user'])) { ?>
+    <div class="comment">
+        <form action="\Image\addComment\<?php echo $pageData['image']['id']; ?>" method="post">
+            <input type="hidden" name="id" value="<?php echo $_SESSION['idUser']; ?>">
+            <label for="">Комментарий:</label>
+            <textarea class="input"name="comment" type="text" rows="5" placeholder="Ваш Комментарий" autofocus></textarea>
+            <input name="submit" type="submit" value="Оставить Комментарий" class="button">
+        </form>
+    </div>
+    <?php } else { ?>
+    <div class="section-item">
+        <h2>Что бы Оставлять Комментарии - <a class="res" href="/Logon">Авторизируйтесь!</a></h2>           
+    </div>
+    <?php } ?>
+</div>

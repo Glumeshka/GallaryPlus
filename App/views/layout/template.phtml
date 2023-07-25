@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/norm.css">
+        <link rel="stylesheet" href="/css/style.css">
+        <title><?php echo $pageData['title']; ?></title>
+    </head>
+<body>
+    <header class="header">
+        <nav class='header_img'>
+            <ul class="header_login">
+                <?php if(!empty($_SESSION['user'])) { ?>
+                    <li class='login_item'><p> <?php echo $_SESSION['user']; ?> </p></li>
+                    <li class='login_item'><a href="/Main/logout">Выйти</a></li>
+                <?php } else { ?>
+                    <li class='login_item'><a href="/Logon">Bойти</a></li>
+                    <li class='login_item'><a href="/Register">Регистрация</a></li>
+                <?php } ?>
+                
+            </ul>
+            <ul class="header_menu">
+                <li class='menu_item item-1'><a href="/">Главная</a></li>
+                <li class='menu_item item-2'><a href="/Upload">Загрузка в галерею</a></li>
+                <li class='menu_item item-3'><a href="/Image">Секретная ссылка</a></li>
+            </ul>            
+        </nav>
+        <div class="header_name">
+            <h1>Галерея Плюс</h1>            
+        </div>    
+    </header>
+	<?php include_once VIEW . $content_view; ?>
+    <footer class="footer">
+        <nav class='footer_img'>
+            <ul class="footer_menu">
+                <li class='footer_menu_item'><a href="#">Новости</a></li>
+                <li class='footer_menu_item'><a href="#">Вакансии</a></li>
+                <li class='footer_menu_item'><a href="#">Рекламодателям</a></li>
+                <li class='footer_menu_item'><a href="#">Контакты</a></li>
+            </ul>            
+        </nav>
+    </footer>
+    <script src="/js/script.js"></script>
+</body>

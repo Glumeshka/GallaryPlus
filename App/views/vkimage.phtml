@@ -1,0 +1,11 @@
+<div class="main">
+    <h2 class='section-item'>Добро Пожаловать!</h2>
+    <section class="section">
+        <?php if(intval($_SESSION['role']) === ROLE_VKUSER) {
+            echo "<img src=" . "\\img\\" . $pageData['image']['filename'] . ">"; 
+            } ?> 
+        <h2 class='section-item'>
+            <?php echo $pageData['image']['title']?>
+        </h2>
+    </section>
+</div>

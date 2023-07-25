@@ -1,0 +1,19 @@
+<main class="form main">
+    <form method="post">
+        <label for="login">Имя пользователя:</label>
+        <input name="username" type="text" placeholder="..." value="" required autofocus>
+        <label for="email">Эл.почта:</label>
+        <input name="email" type="email" placeholder="user@email.ru">
+        <label for="password">Пароль:</label>
+        <input name="password" type="password" placeholder="..." required>
+        <label for="password2">Повторите пароль:</label>
+        <input class="input" name="password2" type="password" placeholder="..." required>
+        <input class="button" type="submit" value="Регистрация">
+        <p>У вас есть аккаунт? - <a class="res" href="/Logon">Авторизируйтесь</a></p>
+        <?php 
+        if(!empty($pageData['error'])){
+            echo "<p class='msg'>" . $pageData['error'] . "</p>";
+        }
+        ?>
+    </form>            
+</main>

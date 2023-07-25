@@ -1,0 +1,216 @@
+* {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: rgb(180, 180, 180);
+    font-weight: bold;
+    text-decoration: none;
+    transition-property: color;
+    transition-duration: 750ms;
+}
+
+a:hover {
+    color: rgb(251, 255, 227);
+}
+
+li {
+    list-style-type: none;
+}
+
+.header_name {
+    display: flex;
+    height: 200px;
+    color: blanchedalmond;
+    font-size: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    justify-content: center;
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}
+
+img {
+    height: 700px;
+    padding: 5px;
+    border-radius: 50px;
+   
+}
+
+.header {
+    height: 450px;
+    background: url(../img/upfone.jpg) bottom no-repeat;
+    background-size: cover;
+}
+
+.header_img {
+    display: flex;
+}
+
+.header_menu {
+    margin-top: 25px;
+    display: inline-flex;
+    color: rgb(24, 21, 21);
+}
+
+.menu_item {
+    padding: 40px;
+    font-size: 45px;    
+    text-align: center;
+}
+
+.header_login {
+    flex-direction: row-reverse;
+    padding: 25px;
+    text-align: center;
+    display: inline-flex;
+}
+
+.main {
+    background: url(../img/fone.jpg) bottom no-repeat;
+    background-position: left bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+   
+}
+.section {
+    margin: 0 auto;
+    padding: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-item {
+    padding: 25px;
+    color: #840000
+}
+
+.section:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.login_item {
+    color: rgb(251, 255, 227);
+    font-size: 25px;
+    padding-left: 20px;   
+}
+
+.footer {
+    align-items: center;
+    justify-content: space-evenly;
+    height: 250px;
+    display: flex;    
+    background: url(../img/downfone.jpg) bottom no-repeat;
+    background-size: cover;
+}
+
+.footer_menu {   
+    display: flex;
+}
+
+.footer_menu_item {    
+    font-family: Roboto, sans-serif;
+    padding: 40px;
+    font-size: 35px;
+    text-shadow: 15px 10px 0 rgba(0, 0, 0, 0.8);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+.form {
+    color: #840000;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    margin: 10px 0;
+    padding: 10px;
+    border: unset;
+    border-bottom: 2px solid #e3e3e3;
+    outline: none;
+}
+
+.button {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #e3e3e3;
+    cursor: pointer;
+}
+
+.res {
+    font-weight: bold;
+    color: rgb(75, 0, 0);
+}
+
+.msg {
+    border: 3px solid #fff700;
+    border-radius: 3px;
+    margin: 3px;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.comment {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* 
+.off {
+    display: none;
+}
+
+.on {
+    display: flex;
+}
+
+.acc_login {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.acc_item {
+    display: inline-flex;
+    color: #840000;
+    height: 150px;
+    align-items: center;
+    justify-content: center;
+    margin-right: 45px;
+    font-size: 30px;
+}
+
+.acc_img {
+    height: 100px;
+    padding: 5px;
+    margin: 25px;
+    border-radius: 50px;
+}
+
+.exit {
+    font-weight: bold;
+    color: rgb(61, 0, 70);
+}
+
+.exit:hover {
+    color: rgb(0, 13, 255);
+} */
