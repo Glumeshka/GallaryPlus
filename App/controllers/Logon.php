@@ -1,6 +1,6 @@
 <?php
 namespace App\controllers;
-require_once MODEL . 'LogonModel.php';
+// require_once MODEL . 'LogonModel.php';
 use App\core\Controller;
 use App\core\View;
 use App\models\LogonModel;

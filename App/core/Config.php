@@ -24,11 +24,11 @@ define('ROLE_VKUSER', 2);
 // данные с регистрированного приложения из VK
 define('ID_VK', '51712911');
 define('SECRET_VK', 'r1zEzAYuCJFZfoI17f1Q');
-define('URL_VK', 'https://0b20-213-155-214-124.ngrok-free.app/Logon/logVK');
+define('URL_VK', 'https://a9d6-109-198-212-75.ngrok-free.app/Logon/logVK');
 
-// require_once ROOT . '\vendor\autoload.php'; автолоадер НЕ РАБОТАЕТ все мозги мне выел... причина не установлена
-require_once CORE . 'Route.php';
-require_once CORE . 'Controller.php';
-require_once CORE . 'Model.php'; 
-require_once CORE . 'View.php';
-require_once CORE . 'DB.php'; 
+require_once ROOT . '\vendor\autoload.php';
+// require_once CORE . 'Route.php';
+// require_once CORE . 'Controller.php';
+// require_once CORE . 'Model.php'; 
+// require_once CORE . 'View.php';
+// require_once CORE . 'DB.php'; 

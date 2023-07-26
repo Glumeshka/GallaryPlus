@@ -1,0 +1,17 @@
+{
+    "name": "im/gallary",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "App\\": "App/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Im"
+        }
+    ],
+    "require": {
+        "php": "^7.2"
+    }
+}

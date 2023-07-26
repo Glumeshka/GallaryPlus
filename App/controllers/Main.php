@@ -1,6 +1,6 @@
 <?php
 namespace App\controllers;
-require_once MODEL . 'MainModel.php';
+// require_once MODEL . 'MainModel.php';
 use App\core\Controller;
 use App\core\View;
 use App\models\MainModel;
